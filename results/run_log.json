@@ -1,0 +1,40 @@
+{
+  "run_utc": "2026-11-20 10:01:19",
+  "python": "3.11.18",
+  "input_file": "data/genome.fasta",
+  "input_sha256": "caa155c83967cc080f4f188f14f1f28c18d77448e87c3d00d3579ed348f4de2a",
+  "parameters": {
+    "ACCESSION": "NC_001422.1",
+    "DOWNLOAD_URL": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id={acc}&rettype=fasta",
+    "WINDOW_SIZE": 200,
+    "WINDOW_STEP": 100,
+    "MIN_ORF_NT": 300,
+    "START_CODON": "ATG",
+    "STOP_CODONS": [
+      "TAA",
+      "TAG",
+      "TGA"
+    ],
+    "TOP_N_ORFS": 10,
+    "DATA_DIR": "data",
+    "INTERMEDIATE_DIR": "intermediate",
+    "RESULTS_DIR": "results",
+    "COMPLEMENT": {
+      "65": 84,
+      "67": 71,
+      "71": 67,
+      "84": 65,
+      "97": 116,
+      "99": 103,
+      "103": 99,
+      "116": 97
+    }
+  },
+  "step_seconds": {
+    "download": 0.24,
+    "windows": 0.0,
+    "gc": 0.0,
+    "orfs": 0.0,
+    "summarise": 0.54
+  }
+}
